@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplo de Site</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Site Exemplo</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Cabeçalho -->
   <header>
-    <div class="container">
-      <h1>NightHost</h1>
+    <div class="container header">
+      <h1 class="logo">NightHost</h1>
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#loja">Loja</a></li>
           <li><a href="#blog">Blog</a></li>
@@ -22,50 +22,52 @@
     </div>
   </header>
 
-  <!-- Seção Hero -->
+  <!-- Hero Section -->
   <section id="hero">
-    <div class="container">
+    <div class="container hero-content">
       <h2>Sites Personalizados, Modernos e Funcionais</h2>
-      <p>Criação de sites com design responsivo e integração completa para o seu negócio.</p>
+      <p>Transforme sua presença online com designs que se destacam.</p>
       <a href="#contato" class="btn">Solicite seu Orçamento</a>
     </div>
   </section>
 
-  <!-- Seção Sobre -->
+  <!-- Sobre -->
   <section id="sobre" class="container">
-    <h2>Sobre</h2>
-    <p>Somos especialistas na criação de sites que atendem às suas necessidades. Oferecemos soluções completas para negócios de todos os tipos.</p>
+    <h2 class="section-title">Sobre</h2>
+    <p>Somos especialistas na criação de sites com design responsivo, funcionalidades avançadas e integração completa para o seu negócio.</p>
   </section>
 
   <!-- Loja -->
   <section id="loja" class="container">
-    <h2>Loja Virtual</h2>
-    <div class="produto">
-      <img src="https://via.placeholder.com/150" alt="Produto 1">
-      <h3>Produto Digital</h3>
-      <p>R$ 49,90</p>
-      <button>Comprar</button>
-    </div>
-    <div class="produto">
-      <img src="https://via.placeholder.com/150" alt="Produto 2">
-      <h3>Produto Físico</h3>
-      <p>R$ 79,90</p>
-      <button>Comprar</button>
+    <h2 class="section-title">Loja Virtual</h2>
+    <div class="produtos">
+      <div class="produto-card">
+        <img src="https://via.placeholder.com/200" alt="Produto Digital">
+        <h3>Produto Digital</h3>
+        <p>R$ 49,90</p>
+        <button class="btn">Comprar</button>
+      </div>
+      <div class="produto-card">
+        <img src="https://via.placeholder.com/200" alt="Produto Físico">
+        <h3>Produto Físico</h3>
+        <p>R$ 79,90</p>
+        <button class="btn">Comprar</button>
+      </div>
     </div>
   </section>
 
   <!-- Blog -->
   <section id="blog" class="container">
-    <h2>Blog</h2>
-    <article>
+    <h2 class="section-title">Blog</h2>
+    <div class="blog-card">
       <h3>Como Escolher o Design Ideal</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Leia mais</a></p>
-    </article>
+      <p>Descubra as melhores práticas para criar um site impactante. <a href="#">Leia mais</a></p>
+    </div>
   </section>
 
   <!-- Contato -->
   <section id="contato" class="container">
-    <h2>Contato</h2>
+    <h2 class="section-title">Contato</h2>
     <form>
       <label for="nome">Nome</label>
       <input type="text" id="nome" name="nome" required>
@@ -73,17 +75,15 @@
       <input type="email" id="email" name="email" required>
       <label for="mensagem">Mensagem</label>
       <textarea id="mensagem" name="mensagem" required></textarea>
-      <button type="submit">Enviar</button>
+      <button type="submit" class="btn">Enviar</button>
     </form>
   </section>
 
   <!-- Rodapé -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 NightHost. Todos os direitos reservados.</p>
-    </div>
+    <p>&copy; 2025 NightHost. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
